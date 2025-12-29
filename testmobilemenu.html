@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <header>
+
+
+      
+      <nav class="mobile-menu" data-visible="true">
+        <div class="navigation">
+    <h1 class="logo">mohamud</h1>
+          <ul class="menu-links">
+
+            <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Quality</a></li>
+                <li><a href="">Skill</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Review</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                   <button class="hire-me">Hire me</button>
+
+          </ul>
+
+        </div>
+      </nav>
+
+      
+      <div class="humbarger">
+      <i class="fa-solid fa-bars" data-visible="true"></i>
+      <i class="fa-solid fa-close" data-visible="false"></i>
+      </div>
+      
+        <nav class="desktop-menu">
+          
+            <h1 class="logo"><span class="moha">Moh</span>amud</h1>
+            <ul class="menu-links">
+                
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Quality</a></li>
+                <li><a href="">Skill</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Review</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <button>Hire me</button>
+            </ul>    
+        </nav>       
+    </header>
+
+  <script>
+       const humbarger= document.querySelector('.humbarger');
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const icons = document.querySelectorAll("i");
+
+        humbarger.addEventListener("click", function (event) {
+            const isVisible = mobileMenu.getAttribute('data-visible');
+            if (isVisible == "true") {
+                // qari hiding
+                mobileMenu.setAttribute('data-visible', "false");
+                icons[0].setAttribute('data-visible', "true");
+                icons[1].setAttribute('data-visible', "false");
+            } else if (isVisible == "false") {
+                // soo bandhig showing
+                mobileMenu.setAttribute('data-visible', "true");
+                icons[0].setAttribute('data-visible', "false");
+                icons[1].setAttribute('data-visible', "true");
+            }
+        });
+
+    </script>
+
+
+<!-- HERO SECTION -->
+
+
+ <div class="hero-section">
+        <div class="image-info">
+          <div class="image">
+        </div>
+        <div class="info">
+            <h1 class="my-name"><span id="iam"><span class="ii">I</span>'m <br> </span>Mohamud Ali</h1>
+            <p class="juniosoftware-dev "> Software & Web Developer!</p>
+            <p class="decription-hero">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore pariatur porro provident sit dolorem!</p>
+            <button class="download-cv">Download CV</button>
+        </div>
+        </div>   
+    </div>
+    <div>
+
+<!-- ABOUT SECTION -->
+
+ <h1 class="about-headtitle">About me</h1>
+        <div class="container">
+             
+            <div class="about-info">
+          
+            <div class="about-image">
+            <!-- <img src="" alt=""> -->
+            </div>
+            <div class="about-content">
+            <h1 class="about-title">Software & Web Developer</h1>
+            <p class="about-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla qui eveniet tempore. Quam qui dolorem quod, dignissimos sit debitis facere sint animi, sapiente eveniet soluta similique. Quam nesciunt debitis placeat possimus nobis amet maiores, vitae consectetur.</p>
+            
+             <div class="information">
+            <div class="info1">
+                <h5>Name: Mohamud</h5>
+                <h5>Degree: Master</h5>
+                <h5>Phone: +2527654468</h5>
+                <h5>Address: 17 waterloo ave</h5>
+
+                <div class="about-btn">
+                    <button id="about-hireme">Hire me</button>
+                    <button id="about-hireme2">Learn more</button>
+                </div>
+                
+            </div>
+            <div>
+                <div class="info2">
+                <h5>Birthday: 1July 1990</h5>
+                <h5>Exprience: 10 years</h5>
+                <h5>Email: Ali@gmail.com</h5>
+                <h5>Freelance: Available</h5>
+                
+            </div>
+          </div>   
+       </div>
+      </div>
+      </div>
+    </div>
+      </div>
+      </div>
+      </div> 
+</div>
+</div> 
+</div>
+</div>
+</div>
+
+
+<!-- EDUCATION & EXPERIENCE SECTION -->
+
+   <h1 class="edex-title">EDUCATION & EXPERIENCE</h1>
+<div class="container">
+   
+        <div class="grid">
+
+        
+  <!-- EDUCTION SECTION-->
+
+   <div class="eduction">
+  <div class="ed-info">
+        <h1 class="ed-title">My Education</h1>
+        <h3>Becholar in CSE</h3>
+        <div class="graduation">
+        <div class="univer">
+         <h4>Kampala University</h4>
+         </div>
+         <div class="date">
+           <span>| 2006 - 2010</span>
+         </div>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis expedita nostrum in placeat quod tenetur accusantium dicta quasi qui natus maiores obcaecati maxime nisi, est ab laboriosam hic. Expedita ea fuga reiciendis!</p>
+   </div>
+   <div class="eduction">
+  <div class="ed-info">
+        
+        <h3>Master in CSE</h3>
+        <div class="graduation">
+        <div class="univer">
+         <h4>Oxford University</h4>
+         </div>
+         <div class="date">
+           <span> | 2012 - 2014</span>
+         </div>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis expedita nostrum in placeat quod tenetur accusantium dicta quasi qui natus maiores obcaecati maxime nisi, est ab laboriosam hic. Expedita ea fuga reiciendis!</p>
+   </div>
+   
+</div>
+<div class="eduction">
+  <div class="ed-info">
+        
+        <h3>Diploma in CSE</h3>
+        <div class="graduation">
+        <div class="univer">
+         <h4>Harvad University</h4>
+         </div>
+         <div class="date">
+           <span> | 2014 - 2015</span>
+         </div>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis expedita nostrum in placeat quod tenetur accusantium dicta quasi qui natus maiores obcaecati maxime nisi, est ab laboriosam hic. Expedita ea fuga reiciendis!</p>
+   </div>
+</div>
+</div>
+
+   
+   <!-- EXPERIENCE SECTION -->
+
+ <div class="experience">
+<div class="ex-info">
+        <h1 class="ex-title">My Experience</h1>
+    
+        <h3>Web Developer</h3>
+          <div class="exp">
+        <div class="com">
+         <h4>Amal Bank</h4>
+         </div>
+         <div class="date">
+           <span> | 2014 - 2015</span>
+         </div>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis expedita nostrum in placeat quod tenetur accusantium dicta quasi qui natus maiores obcaecati maxime nisi, est ab laboriosam hic. Expedita ea fuga reiciendis!</p>
+
+</div>
+
+ 
+ <div class="experience">
+      <div class="ex-info">
+        <h3>Mobile App Developer</h3>
+        <div class="exp">
+        <div class="com">
+         <h4>CIBC Bank</h4>
+         </div>
+         <div class="date">
+           <span> | 2015 - 2017</span>
+         </div>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis expedita nostrum in placeat quod tenetur accusantium dicta quasi qui natus maiores obcaecati maxime nisi, est ab laboriosam hic. Expedita ea fuga reiciendis!</p>
+</div>
+ </div>
+
+ <div class="experience">
+      <div class="ex-info">
+        <h3>Graphic Designer</h3>
+        <div class="exp">
+        <div class="com">
+         <h4>Sagal Jet</h4>
+         </div>
+         <div class="date">
+           <span> | 2017 - 2020</span>
+         </div>
+        </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis expedita nostrum in placeat quod tenetur accusantium dicta quasi qui natus maiores obcaecati maxime nisi, est ab laboriosam hic. Expedita ea fuga reiciendis!</p>
+</div>
+ </div>
+ </div>
+</div>
+</div>
+
+
+<!-- SKILLS SECTION -->
+
+<h1 class="skill-title">WHAT I DO!</h1>
+<div class="skill-container">
+  <div class="skills">
+      <div class="skills-info">
+        <div class="skill">
+      <i class="fa-brands fa-html5 web"></i>
+      <h2 class="skill-subtitle">Web Development</h2>
+      <p class="skill-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quam a quo? Ea facilis cum officia quia. Dolor facere, esse eum fugiat optio autem omnis ex nemo. Quia, laboriosam aliquid.</p>
+    </div>
+
+     <div class="skills-info">
+      <div class="skill">
+    <i class="fa-solid fa-mobile-button mobile"></i>
+      <h2 class="skill-subtitle">Mobile App Devevlopment</h2>
+      <p class="skill-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quam a quo? Ea facilis cum officia quia. Dolor facere, esse eum fugiat optio autem omnis ex nemo. Quia, laboriosam aliquid.</p>
+    </div>
+    <div class="skills-info">
+      <div class="skill">
+   <i class="fa-solid fa-video graphic"></i>
+      <h2 class="skill-subtitle">Graphic Design</h2>
+      <p class="skill-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quam a quo? Ea facilis cum officia quia. Dolor facere, esse eum fugiat optio autem omnis ex nemo. Quia, laboriosam aliquid.</p>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- SERVICES SECTION -->
+
+<h1 class="services-title">MY SERVICES</h1>
+<div class="service-container">
+<div class="services">
+  <div class="service-info">
+ <div class="web-design">
+  <div class="web-title">
+    <div class="icon">
+      <i class="fa-solid fa-computer"></i>
+    </div>
+    <div class="title"> 
+      <h3 class="services-subtitle">Web Design</h3>
+    </div>
+  </div>
+  <p class="service-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, hic omnis commodi doloremque illo, officia placeat molestiae illum et, nesciunt beatae alias.</p>
+  <a href="">Read more</a>
+</div>
+</div>
+<div class="service-info">
+  <div class="web-dev">
+  <div class="web-title">
+    <div class="icon">
+      <i class="fa-solid fa-computer"></i>
+    </div>
+    <div class="title"> 
+      <h3 class="services-subtitle">Web Development</h3>
+    </div>
+  </div>
+  <p class="service-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, hic omnis commodi doloremque illo, officia placeat molestiae illum et, nesciunt beatae alias.</p>
+  <a href="">Read more</a>
+</div>
+</div>
+<div class="service-info">
+ <div class="mobile-app">
+  <div class="web-title">
+    <div class="icon">
+     <i class="fa-brands fa-android"></i>
+    </div>
+    <div class="title"> 
+      <h3 class="services-subtitle">Apps Design</h3>
+    </div>
+ 
+  </div>
+  <p class="service-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, hic omnis commodi doloremque illo, officia placeat molestiae illum et, nesciunt beatae alias.</p>
+  <a href="">Read more</a>
+
+</div>
+</div>
+<div class="service-info">
+ <div class="mobile-app">
+  <div class="web-title">
+    <div class="icon">
+     <i class="fa-brands fa-apple"></i>
+    </div>
+    <div class="title"> 
+      <h3 class="services-subtitle">Apps Development</h3>
+    </div>
+ 
+  </div>
+  <p class="service-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, hic omnis commodi doloremque illo, officia placeat molestiae illum et, nesciunt beatae alias.</p>
+  <a href="">Read more</a>
+
+</div>
+</div>
+<div class="service-info">
+ <div class="mobile-app">
+  <div class="web-title">
+    <div class="icon">
+     <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="title"> 
+      <h3 class="services-subtitle">SEO</h3>
+    </div>
+ 
+  </div>
+  <p class="service-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, hic omnis commodi doloremque illo, officia placeat molestiae illum et, nesciunt beatae alias.</p>
+  <a href="">Read more</a>
+
+</div>
+</div>
+<div class="service-info">
+ <div class="mobile-app">
+  <div class="web-title">
+    <div class="icon">
+    <i class="fa-solid fa-file-pen"></i>
+    </div>
+    <div class="title"> 
+      <h3 class="services-subtitle">Content Creation</h3>
+    </div>
+ 
+  </div>
+  <p class="service-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, hic omnis commodi doloremque illo, officia placeat molestiae illum et, nesciunt beatae alias.</p>
+  <a href="">Read more</a>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- PORTFOLIO SECTION -->
+ 
+<div class="portfolio-container">
+  <h1 class="portifolio-title">MY PORTFOLIO</h1>
+  <div class="btns">
+    <div class="all">
+      <button>All</button>
+    </div>
+    <div class="design">
+      <button>Design</button>
+    </div>
+    <div class="development">
+     <button>Development</button>
+    </div>
+
+    <div class="marketing">
+     <button>Marketing</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="portfolio">
+ 
+      <img src="https://plus.unsplash.com/premium_photo-1671247953201-2fdc17af6692?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fHBvcnRmb2xpb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+    
+     
+    
+      <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHBvcnRmb2xpb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+    
+    
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHBvcnRmb2xpb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+   
+   
+    
+      <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvfGVufDB8fDB8fHww" alt="">
+
+      <img src="https://images.unsplash.com/photo-1639195276454-f0ec20b5bcb6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHBvcnRmb2xpbyUyMHdlYnNpdGV8ZW58MHx8MHx8fDA%3D" alt="">
+
+      <img src="https://images.unsplash.com/photo-1649696541574-9e74c5cf34b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBvcnRmb2xpbyUyMHdlYnNpdGV8ZW58MHx8MHx8fDA%3D" alt="">
+</div>
+</div>
+
+
+<!-- MY BLOG SECTION-->
+
+<div class="blog-container">
+  <h1 class="blog-title">LATEST BLOG</h1>
+  <div class="blog-grid">
+    <div class="blog-info">
+      <div class="blog1">
+        <img src="https://media.istockphoto.com/id/1252684502/photo/professional-blogger-working-on-his-new-post-for-social-media-at-home-closeup-creative.webp?a=1&b=1&s=612x612&w=0&k=20&c=o2mkKMCMDxTItO3QTw6xCE0k7GQt8VxW56-pMFxWFxk=" alt="">
+        <p class="blog-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, omnis?</p>
+        <button class="blog-btn">Read more..</button>
+
+      </div>
+       <div class="blog-info">
+      <div class="blog2">
+        <img src="https://images.unsplash.com/photo-1502465771179-51f3535da42c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fGJsb2d8ZW58MHx8MHx8fDA%3D" alt="">
+        <p class="blog-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, omnis?</p>
+        <button class="blog-btn">Read more..</button>
+
+      </div>
+       <div class="blog-info">
+      <div class="blog3">
+        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+        <p class="blog-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, omnis?</p>
+        <button class="blog-btn">Read more..</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<!-- CONTACT SECTION -->
+
+<div class="contact-container">
+  <h1 class="contact-title">CONTACT ME</h1>
+  <div class="contact-grid">
+    <input type="text" name="name" id="" placeholder="Your Name">
+    <input type="email" name="email" id="" placeholder="Email">
+    <input type="text" name="Phone" id="" placeholder="Phone">
+    <input type="text" name="Subject" id="" placeholder="Suject">
+
+    </div>
+    <textarea name="" id="" placeholder="Message"></textarea>
+    <button class="contact-btn">Send Message</button>
+
+</div>
+  </div>
+  </div>
+
+
+
+<!-- FOOTER SECTION -->
+
+<div class="footer">
+  <div class="social-media">
+    <i class="fa-brands fa-twitter social-footer"></i>
+    <i class="fa-brands fa-facebook social-footer"></i>
+    <i class="fa-brands fa-instagram social-footer"></i>
+
+  </div>
+
+  <div class="privacy-terms">
+   <span class="ptfh">Privacy |</span>
+     <span class="ptfh">Terms |</span>
+       <span class="ptfh">FAQS |</span>
+       <span class="ptfh">Help</span>
+  </div>
+
+  <div class="copywrite">
+
+    <span id="copyrights">&copy;All rights Reserved.Designed by ILEYS THECH</span>
+
+  </div>
+
+
+
+</body>
+</html>
