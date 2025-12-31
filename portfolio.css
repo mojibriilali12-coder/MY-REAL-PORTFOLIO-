@@ -112,7 +112,7 @@ button:hover{
 }
 
 .image{
-width: 550px;
+width: 490px;
 background: url("portfolio.jpg");
 background-position: center;
 background-repeat: no-repeat;
@@ -188,9 +188,10 @@ background-size: cover;
     background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-    width: 90%;
+    width: 95%;
     height: 420px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 .container{
     display: flex;
@@ -698,18 +699,18 @@ textarea{
     .mobile-menu{
         display: none;
     }
-    header{
+    /* header{
         height: 0;
-    }
+    } */
 }
 
 @media(max-width:768px){
     .desktop-menu{
         display: none;
     }
-     header{
+     /* header{
         height: 0;
-    }
+    } */
     
      .mobile-menu{
         display: flex;
